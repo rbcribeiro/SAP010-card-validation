@@ -2,13 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
   </head>
-  <body>
-    <header></header>
-    <main>.</main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+
+  <body>   
+    <div class="container">
+      <main>
+        <h1>Verificação de Cartão de Crédito</h1>
+        <p>Dúvida se é um cartão de crédito válido?</p>
+        <p>Aqui você pode fazer essa verificação somente com os números do cartão.</p>
+                               
+        <div class="container-imagem">
+          <img src="../img/cartao-credito.png" alt="Cartão" class="cartao-imagem">
+          <div class="overlay">
+            <input type="password" id="numerosInput" class="input-imagem" placeholder="Digite para verificação">
+          </div>
+        </div>
+        <br><br>
+        <button onclick="converterParaArray()">Enviar</button>
+        
+        <br><br>               
+      
+        <p id="validade"></p><br><br>
+      
+      </main> 
+      <footer>
+        Desenvolvido por <a href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">Renata Ribeiro</a>
+      </footer>   
+    </div>  
   </body>
+  <script src="index.js"></script>
 </html>

@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 120%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    background-image: url('../img/planofundo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.85;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.container {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+main {
+    background: linear-gradient(#8dd6c1e5, #538f83c5);
+    background-color: transparent;
+    padding-top: 4%;
+}
+
+
+.container-imagem {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cartao-imagem {
+    width: 60%;
+    height: auto;
+    border-radius: 5%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .input-imagem {
+    width: 45%;
+    height: 15%;
+    font-size: 60%;
+  }
+  
+  
+
+button {
+   margin-top: 2%;
+    font-size: 80%;
+    background-color: rgb(149, 19, 196);
+    color: white;
+}
+
+#validade{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+footer {
+    background-color: darkgray;
+    color: #0e0958;
+      font-size: 70%;
+      font-family: cursive;
+      text-align: center;
+  
+  }
