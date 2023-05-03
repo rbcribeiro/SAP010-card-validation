@@ -1,83 +1,154 @@
+
 html {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-size: 120%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
-    background-image: url('../img/planofundo.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+  background-color: black;
+  background-image: url("../img/planofundo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+
 }
 
 body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  }
 
 .container {
-    text-align: center;
-    width: 70%;
-    margin: auto;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  background: linear-gradient(#035039b6, #04381483);
+  border-radius: 50px 50px 0 0;
+
+
+}
+header{
+background-color: rgba(255, 255, 255, 0.238);
+;
+
+}
+h1{
+text-shadow: 20px 15px 20px rgb(0, 0, 0);
+-webkit-text-stroke: 1px black;
+font-size: 4rem;
 }
 
+.bemVindo{
+font-family: cursive;
+
+}
+
+nav {
+display: inline-block; /* exibe os itens em linha */
+width: 23%; /* define a largura dos itens */
+text-align: center; /* centraliza o conteúdo */
+box-sizing: border-box; /* inclui a largura da borda e do padding no width */
+border-radius: 50px;
+font-size: 100%;
+}
+
+p{
+  font-size: 1,5rem;
+
+}
+
+.logomarca {
+float: left;
+margin: 5% 1% 5% 5%;
+width: 25%;
+
+}
+.bloco{
+  display: inline-block; 
+
+}
+.ladoDireito{
+  float: right;
+  height: 5%;
+  width: 65%;
+  margin: 5% 0% 5% 0%;
+  font-size: 120%;
+  }
+
 main {
-    background: linear-gradient(#8dd6c1e5, #538f83c5);
-    background-color: transparent;
-    padding-top: 4%;
+  background-color: transparent;
+  overflow: hidden;
 }
 
 
 .container-imagem {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .cartao-imagem {
-    width: 60%;
-    height: auto;
-    border-radius: 5%;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  
-  .input-imagem {
-    width: 45%;
-    height: 15%;
-    font-size: 60%;
-  }
-  
-  
+  position: relative;
+  display: inline-block;
+  opacity: 0.7;
 
-button {
-   margin-top: 2%;
-    font-size: 80%;
-    background-color: rgb(149, 19, 196);
-    color: white;
 }
 
-#validade{
-    font-size: 120%;
-    font-weight: bold;
+.cartao-imagem {
+  width: 70%;
+  height: auto;
+  border-radius: 6%;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.input-imagem {
+  width: 50%;
+  height: 18%;
+  font-size: 100%;
+}
+
+
+
+button {
+  margin-top: 2%;
+  font-size: 80%;
+  background-color: rgba(0, 0, 0, 0.625);
+  color: antiquewhite;
+
+}
+
+.validade-invisivel {
+  display: none;
+}
+
+.validade-visivel {
+  font-size: 1,5rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.238);
+  border-radius: 0 50px 0  50px;
+  padding: 5%;
+
+
+}
+address{
+  font-size: 80%;
 }
 
 footer {
-    background-color: darkgray;
-    color: #0e0958;
-      font-size: 70%;
-      font-family: cursive;
-      text-align: center;
-  
-  }
+  background-color: rgb(5, 42, 4);
+    font-size: 80%;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+
+
+}

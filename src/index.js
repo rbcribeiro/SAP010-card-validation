@@ -1,29 +1,36 @@
-function converterParaArray() {
-  document.getElementById('numerosInput').addEventListener('input', function(event) {
-    const inputValor = event.target.value;
-    document.querySelector('.overlay').textContent = inputValor;
-    });
-    
-    var numerosDigitados = document.getElementById('numerosInput').value;
-    var numerosAsteriscos = numerosDigitados.replace(/.(?=.{4,}$)/g, '*');
-    var numerosIndividuais = numerosDigitados.split('');
-     
-    for (var i = numerosIndividuais.length - 2; i >= 0; i -= 2) { 
-      numerosIndividuais[i] *= 2;
-      if (numerosIndividuais[i] > 9) { 
-        numerosIndividuais[i] -= 9;
-      }
-    }
-  
-    var soma = 0;
-    
-    for (var i = 0; i < numerosIndividuais.length; i++) { 
-      soma += parseInt(numerosIndividuais[i]);
-    }
-  
-    if (soma % 10 === 0) {
-      document.getElementById('validade').innerHTML = `O cartão ${numerosAsteriscos} é válido`;
-    } else {
-      document.getElementById('validade').innerHTML = `O cartão ${numerosAsteriscos} é inválido`;
-    }
+import validator from "./validator.js";
+
+document.getElementById("enviar").addEventListener("click", onClickEnviar); // add o evento de clique ao botão vinculando a função
+
+function onClickEnviar() {
+  const cartaoCredito = lerCartaoCredito();
+  const valido = validator.isValid(cartaoCredito);
+  const numeroMascarado = validator.maskify(cartaoCredito);
+  escreverResultado(valido, numeroMascarado);
+}
+
+function lerCartaoCredito() {
+  //assinatura da função
+  const numerosInput = document.getElementById("numerosInput").value; //implementação da função
+  return numerosInput;
+}
+
+function escreverResultado(valido, numeroMascarado) {
+  if (valido) {
+    document.getElementById(
+      "validade"
+    ).innerHTML = `O cartão ${numeroMascarado} é válido. Boas compras!!`;
+    document.getElementById("validade").classList.add("validade-visivel");
+    document.getElementById("validade").classList.remove("validade-invisivel");
+  } else {
+    document.getElementById(
+      "validade"
+    ).innerHTML = `O cartão ${numeroMascarado} é inválido`;
+    document.getElementById("validade").classList.add("validade-visivel");
+    document.getElementById("validade").classList.remove("validade-invisivel");
   }
+}
+
+//         // Atualiza o overlay com o valor digitado
+//         document.querySelector('.overlay').textContent = inputValor;
+//       });

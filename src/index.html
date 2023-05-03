@@ -2,36 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>   
+  <body>
     <div class="container">
+      <h1>JRSports</h1>
+      <header>
+        <nav><a href="">Início</a></nav>
+        <nav><a href="">Produtos</a></nav>
+        <nav><a href="">Sobre</a></nav>
+        <nav><a href="">Contato</a></nav>
+      </header>
+      
       <main>
-        <h1>Verificação de Cartão de Crédito</h1>
-        <p>Dúvida se é um cartão de crédito válido?</p>
-        <p>Aqui você pode fazer essa verificação somente com os números do cartão.</p>
-                               
-        <div class="container-imagem">
-          <img src="../img/cartao-credito.png" alt="Cartão" class="cartao-imagem">
-          <div class="overlay">
-            <input type="password" id="numerosInput" class="input-imagem" placeholder="Digite para verificação">
+        <h2 class="bemVindo">&#x2764; Seja bem-vindo &#x2764;</h2>
+        <h2>Trabalhamos  com camisas de times nacionais e internacionais, tamanhos  adulto e infantil.</h2>
+        <div class="bloco">
+          <img src="../img/jrsports.png" alt="Logomarca JRSports" class="logomarca">
+        
+          <div class="ladoDireito">
+            <p>Valide seu cartão de crédito para prosseguir:</p>
+
+            <div class="container-imagem">
+              <img src="../img/cartao-credito.png" alt="Cartão" class="cartao-imagem">
+              <div class="overlay">
+                <input type="number" id="numerosInput" class="input-imagem" placeholder="0000 0000 0000 0000">
+              </div>
+            </div>
+
+            <br>
+
+            <button id="enviar">Enviar</button>
+  
+            <p id="validade" class="validade-invisivel"></p>
           </div>
         </div>
-        <br><br>
-        <button onclick="converterParaArray()">Enviar</button>
-        
-        <br><br>               
-      
-        <p id="validade"></p><br><br>
-      
+        <address>Santo Antônio, nº02, Centro - Cachoeira do Campo <br> Ouro Preto/MG</address>
       </main> 
+      
       <footer>
-        Desenvolvido por <a href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">Renata Ribeiro</a>
+        Desenvolvido por <a href="https://www.linkedin.com/in/rbcribeiro/" target="_blank">Renata Ribeiro</a> | LABORATORIA
       </footer>   
     </div>  
+    <script src="index.js" type="module"></script>
+    
   </body>
-  <script src="index.js"></script>
 </html>
