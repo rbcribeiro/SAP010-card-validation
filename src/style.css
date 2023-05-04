@@ -6,7 +6,7 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: antiquewhite;
   background-color: black;
-  background-image: url("/img/planofundo1.jpg");
+  background-image: url("img/planofundo1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
