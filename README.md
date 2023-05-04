@@ -13,9 +13,9 @@ Utilizando o algoritmo de Luhn, obtemos o inverso do número a ser verificado (q
 
 3. Objetivos de Aprendizagem
 
-HTML
-CSS
-JavaScript
-Web APIs
-Git e GitHub
+* HTML
+* CSS
+* JavaScript
+* Web APIs
+* Git e GitHub
 
